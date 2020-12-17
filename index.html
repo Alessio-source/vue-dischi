@@ -18,11 +18,12 @@
     <div id="root">
 
       <select class="" name="" v-model="select">
-        <option value="" v-for="genre in genres">{{ genre }}</option>
+        <option></option>
+        <option v-for="genre in genres" >{{ genre }}</option>
       </select>
 
       <ul id="cards">
-        <li v-for="card in cards">
+        <li v-for="card in filteredArr">
           <div class="">
             <img :src="card.poster" alt="">
             <h2>{{ card.title }}</h2>

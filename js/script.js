@@ -28,8 +28,23 @@ var app = new Vue({
           }
         })
       });
+
   },
+  updated() {
+    var selected = this.select;
+    if(this.select != ""){
+      this.fil
+
+    } else {
+      console.log("select vuoto")
+    }
+  },
+  computed: {
+    filteredArr() {
+      return this.cards.filter(item => { return item.genre.match(this.select)})
+    }
+  },
+
   methods: {
-  
   }
 })
