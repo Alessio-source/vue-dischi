@@ -17,10 +17,13 @@
 
     <div id="root">
 
-      <select class="" name="" v-model="select">
-        <option></option>
-        <option v-for="genre in genres" >{{ genre }}</option>
-      </select>
+      <div class="filter">
+        <label for="">Filtra per: </label>
+        <select class="" name="" v-model="select">
+          <option></option>
+          <option v-for="genre in genres" >{{ genre }}</option>
+        </select>
+      </div>
 
       <ul id="cards">
         <li v-for="card in filteredArr">

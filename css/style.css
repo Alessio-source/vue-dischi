@@ -8,6 +8,20 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.filter {
+  padding: 20px;
+  background-color: #44355b;
+  color: white;
+}
+
+.filter > select {
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  outline: none;
+}
+
 #cards {
   display: flex;
   flex-wrap: wrap;
