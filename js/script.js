@@ -30,17 +30,13 @@ var app = new Vue({
       });
 
   },
-  updated() {
-    var selected = this.select;
-    if(this.select != ""){
-      this.fil
-
-    } else {
-      console.log("select vuoto")
-    }
-  },
   computed: {
     filteredArr() {
+      this.cards.sort(function(a,b) {
+        a = a.year;
+        b = b.year;
+        return new Date(b) - new Date(a)
+      });
       return this.cards.filter(item => { return item.genre.match(this.select)})
     }
   },
