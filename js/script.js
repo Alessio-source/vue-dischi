@@ -40,7 +40,4 @@ var app = new Vue({
       return this.cards.filter(item => { return item.genre.match(this.select)})
     }
   },
-
-  methods: {
-  }
 })
